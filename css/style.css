@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.grid-contenedor{
+	display: grid;
+	min-width: 100vw;
+	min-height: 100vh;
+	grid-template-areas: 
+	"header nav nav"
+	"main main main"
+	"footer footer footer";
+
+}
+.item1{
+	grid-column: 1/1;
+	grid-area: header;
+}
+.item2{	
+	grid-column: 1/3;
+	grid-area: nav;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.item3{
+	grid-row:2/3 ;
+	grid-area: main;
+}
+.item4{
+	grid-column: 4/3;
+	grid-area: footer;
+	width: 100%;
+}
+body{background-image: url("../img/fondo.jpg");
+	font-family: "calibri";
+}
+.logo{
+	width: 250px;
+	height: 155px;
+}
+.img{
+	width: 20vw;
+	height: 50vh;
+	padding: 20px;
+	margin: auto;
+	margin-top: 30px;
+}	
+.caja{
+	background-color: #FFE690;
+	border-style: solid;
+	border-color: orange;
+	margin-top: 10px;
+	padding-bottom: 20px;
+	margin: 0px auto;
+}
+.section1{
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	display: flex;
+	text-align: center;
+	align-content: center;
+}
+.section2{
+	justify-content: center ;
+	display: flex;
+	text-align: center;
+
+}
+.contacto{
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	padding: 10px 20px;
+	margin-top: 50px;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+.contacto2{
+	background: rgba(0, 0, 0, 0.5); 
+	padding: 10px 20px;
+	margin-top: 50px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	width: 25%;
+}
+
+nav{
+	display: flex; 
+	grid-area: nav;
+	align-content: center;
+	border-color: #FFE690;
+}
+nav ul li{
+	list-style: none;
+	margin-left: 75px;
+	float: left;
+	padding: 25px 0;
+}
+nav ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}	
+.relleno{
+	background-color: orange;
+	border-color: #FFE690;
+	border: 3px ;
+}
+.minititulo{
+	color: white;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+input,textarea{width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+footer{
+	grid-area: footer;
+	padding:30px;
+	margin-top: 50px;
+	width: 100%;
+}
+.texto{
+	text-align: center;
+	margin-top: 15px;
+}
+.cursos{
+	text-align: center;
+	color: white;
+}
+
+.table{
+	width:40%;
+	background-color: #FFE690;
+	text-align: left;
+	border-style: solid;
+	border-color: #FFC600;
+	justify-content: right;
+	
+}
+th, td{
+	padding: 20px;
+}
+.titulo{
+	margin-left: 10px;
+	margin-top: 20px;
+	text-decoration: underline;
+	padding: 10px;
+	font-family: roboto;
+}
+.parrafo{
+	margin-left: 10px;
+	font-family: arial;
+	font-weight: bold;
+	color: #fff;
+}
+p{
+	font-weight: bold
+}
+.centrar{
+	
+	justify-content: center;
+}
+.galeria{
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row;
+	text-align: ;
+}
+figcaption{
+	margin-left: 10px;
+	font-family: arial;
+	font-weight: bold;
+	color: #fff;
+	font-size: 20px;
+}
+@media screen and (max-width:1024px){
+	.grid-contenedor{
+	
+	grid-template-areas: 
+	"header header "
+	"nav nav "
+	"main main"
+	"main main"
+	"footer footer ";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 150px 80px 1fr 1fr 100px;
+}
+.img{
+	width: 300px;
+	height: 450px;
+}
+.section1{
+	flex-flow: column nowrap;
+
+}
+.contacto2{
+	width:50%;
+}
+}
+
+@media screen and (max-width: 768px){
+
+.grid-contenedor{
+	
+	grid-template-areas: 
+	"header header "
+	"nav nav "
+	"main main"
+	"main main"
+	"footer footer ";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 150px 80px 1fr 1fr 100px;
+}
+@media screen and (max-width:480px){
+	.grid-contenedor{
+	
+	grid-template-areas: 
+	"header"
+	"nav"
+	"main"
+	"main"
+	"footer";
+	grid-template-columns: 1fr ;
+	grid-template-rows: 150px auto 1fr 1fr 100px;
+}
+.logo{
+	width: 200px;
+	height: 150px;
+}
+
+.item2{
+	flex-direction: column;
+	align-content: center;
+}
+.item3{
+	flex-flow: column wrap;
+}
+.texto-centrado{ 
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+}
+.video{
+	width: 30%;
+}
+.contacto2{
+	width: 100%;
+}
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:400px; 
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+}
+@media screen and (max-width:320px){
+	.grid-contenedor{
+	
+	grid-template-areas: 
+	"header"
+	"nav"
+	"main"
+	"main"
+	"footer";
+	grid-template-columns: 1fr ;
+	grid-template-rows: 150px auto 1fr 1fr 100px;
+}
+.img{
+	width: 100%;
+}
+}
+	

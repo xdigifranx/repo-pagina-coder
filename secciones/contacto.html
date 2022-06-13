@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>remeras sublimadas</title>
+    <link rel="icon" href="../img/favicon.ico">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="grid-contenedor">
+	 
+     
+        <header class="item1 relleno">
+        <a href="../index.html">
+        <img class="logo" src="../img/logo.jpg" alt="remerasublimadas">
+        </header> 
+           
+    	 		
+         <nav class="item2 relleno">
+            <ul>
+                <li><a href="cursosdesublimacion.html">cursos de sublimacion</a></li>
+            </ul>
+            <ul>
+                <li><a href="promociones.html">promociones</a></li>
+            </ul>
+            <ul>
+                <li><a href="nosotros.html">nosotros</a></li>
+            </ul>
+            <ul>
+                <li><a href="contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+     
+    	<div class="item3 seccion1">
+		<main >
+			<h1 class="titulo">contacto</h1>
+			<section class="contacto2">
+				<form action="envio.php" method="post" id="contacto">
+				<fieldset>
+					<label for="nombre">Nombre</label>
+					<br>
+					<input type="text" name="nombre" id="nombre">
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input type="email" name="email" id="email">
+				</fieldset>
+				<fieldset>
+					<legend>Info de venta</legend>
+					<label for="remeras">remeras</label>
+					<input type="checkbox" value="remeras" id="remeras">
+					<br>
+					<label for="remeras manga larga">remeras manga larga</label>
+					<input type="checkbox" value="remeras manga larga" id="remeras manga larga">
+				</fieldset>
+				<fieldset>
+					<legend>Entrega</legend>
+					<label for="local">Retira en el local</label>
+					<input type="radio" id="local" value="local" name="entrega">
+					<br>
+					<label for="envio">Envío a domicilio</label>
+					<input type="radio" id="envio" value="envio" name="entrega">
+					<br>
+					<label for="localidad">Localidad</label>
+					<select name="localidad" id="localidad">
+						<option value="caba">CABA</option>
+						<option value="bsas">Buenos Aires</option>
+						<option value="interior">Interior del país...</option>
+					</select>
+				</fieldset>
+				<label for="mensaje">Mensaje</label>
+				<br>
+				<textarea cols="30" rows="10"></textarea>
+				<br>
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Cancelar">
+			</form>
+			</section>
+			</div>
+			
+	
+    	<footer class="item4">
+            <h3>siguenos en nuestras redes </h3>
+			<a href="https://www.facebook.com/remerassublimadas26" target="_blank">
+			<img src="../img/facebook.png" alt="seguinos en facebook">  
+    	</footer>
+ </div>
+</body>
+</html>				
