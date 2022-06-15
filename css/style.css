@@ -179,6 +179,10 @@ figcaption{
 	color: #fff;
 	font-size: 20px;
 }
+.transformacion:hover
+{
+	transform: rotate(10deg);
+}
 @media screen and (max-width:1024px){
 	.grid-contenedor{
 	
